@@ -78,7 +78,7 @@ h1.project-name {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .chats-list {
@@ -119,7 +119,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 18px 12px;
+    padding: 0px 0px;
 }
 
 .chat {
@@ -180,17 +180,17 @@ h1.chat-user {
     display: flex;
     align-items: center;
     height: 50px;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 0px 0px;
     padding: 0px 10px;
-}
+  }
 
 .message {
-    margin: 4px 20px 0px;
-    border-radius: 10px;
-    padding: 4px 8px;
+    margin: 5px 20px 1px;
+    border-radius: 0px;
+    padding: 4px 6px;
     max-width: 45%;
     color: var(--dark-text-color);
-}
+  }
 
 div.self {
     background-color: var(--self-message);
@@ -215,7 +215,6 @@ div.receive {
 
 .text-input {
     padding: 6px 10px;
-    border-radius: 5px;
     border: none;
     outline: none;
     width: 100%;
@@ -238,13 +237,12 @@ button.attach:hover {
 
 .send {
     cursor: pointer;
-    padding: 4px 22px;
+    padding: 4px 100px;
     font-weight: bold;
-    border-radius: 4px;
     border: none;
     background-color: var(--primary-color);
     color: var(--text-color);
-}
+  }
 
 .send:hover {
     background-color: var(--primary-hover);
@@ -279,11 +277,11 @@ button.attached {
     position: absolute;
     width: 100%;
     height: 100%;
-    display: flex;
     align-items: center;
     justify-content: center;
-    backdrop-filter: blur(3px);
-}
+    backdrop-filter: blur(700px);
+    display: flex;
+  }
 
 .login {
     color: var(--text-color);
@@ -296,13 +294,12 @@ button.attached {
 }
 
 .username {
-    margin: 15px 0px;
+    margin: 40px 0px;
     border: none;
-    border-radius: 4px;
     padding: 2px 6px;
     text-align: center;
     font-size: 18px;
-}
+  }
 
 .focus:hover {
     background-color: rgba(0, 247, 255, 0.527);

@@ -1,5 +1,3 @@
-console.log("Socket.io Chat - Initializing");
-
 import express from "express";
 import http from 'http';
 import { Server } from "socket.io";
