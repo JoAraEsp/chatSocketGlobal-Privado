@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#" type="image/x-icon">
+    <title>Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="modal" class="modal-container">
+        <div class="modal">
+            <form class="login" id="login">
+                <label id="instruction" for="username">Ingrese su nombre que lo identificará</label>
+                <input autocomplete="off" type="text" id="username" class="username">
+                <button type="submit" class="send">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <header>
+        <h1 class="project-name"><strong>Chat-patito</strong></h1>
+    </header>
+    <main>
+        <div class="chats-list" id="chats-list">
+            <div class="chat" id="general">
+                <h1 class="chat-user">
+                    <span class="status active"></span>
+                    Modo global
+                </h1>
+                <span class="message-preview">
+                    Envía mensajes a todos
+                </span>
+            </div>
+
+        </div>
+
+        <div class="active-chat">
+            <div id="message-container" class="message-container">
+            </div>
+            <div class="message-controls" id="message-form">
+                <input id="text-input" autocomplete="off" type="text" class="text-input"
+                    placeholder="Escriba su mensaje y luego presione enter o bien haga clic en el botón Enviar">
+                <input id="files" hidden type="file" class="attach" accept="image/png, image/jpeg">
+                <button id="file-btn" class="attach">Cargar</button>
+                <input id="send" type="submit" class="send" value="Enviar">
+            </div>
+        </div>
+    </main>
+
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/socketClient.js" type="module"></script>
+
+</html>
